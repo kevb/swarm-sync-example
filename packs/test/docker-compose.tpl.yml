@@ -1,0 +1,10 @@
+---
+version: '3.3'
+
+services:
+  test:
+    image: "{{ image.repository }}:{{ image.tag }}"
+    deploy:
+      labels:
+        - "swarm-sync.managed=true"
+        - "swarm-sync.image-pattern={{ image.tag_pattern }}"
