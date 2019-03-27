@@ -1,0 +1,5 @@
+---
+image:
+  repository: kevbuk/test
+  tag: "v0.0.1"
+  tag_pattern: "semver:^0.0.1"
