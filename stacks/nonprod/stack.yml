@@ -1,10 +1,16 @@
 ---
 packs:
   # Using a pack found within the config repo in /packs/wordpress
-  - pack: test
-    # Values can be included here
+  #- pack: test
+  #  # Values can be included here
+  #  values:
+  #    image:
+  #      repository: kevbuk/test
+  #      tag: "0.0.1"
+  #      tag_pattern: "semver:^0.0.1"
+  - pack: official/incubator/verdaccio
     values:
       image:
-        repository: kevbuk/test
-        tag: "0.0.1"
-        tag_pattern: "semver:^0.0.1"
+        repository: docker.1day.host/1day/verdaccio-s3
+        tag: 3.11.6
+        tag_pattern: ^3.11.6
