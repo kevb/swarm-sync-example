@@ -14,3 +14,6 @@ packs:
         repository: docker.1day.host/1day/verdaccio-s3
         tag: 3.11.6
         tag_pattern: semver:^3.11.6
+
+  - pack: official/incubator/sleepybox
+    values_file: ../../shared_values/sleepybox.yml
